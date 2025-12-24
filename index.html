@@ -3,140 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mohan Krishna - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="images/web-design.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar ">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#">MY PORTFOLIO</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#home">Home</a></li>              
-              <li><a href="#about">About</a></li>
-              <li><a href="#project">My Project</a></li>
-              <li><a href="#contact">Contact Me</a></li>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">MK</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
         </div>
-      </nav>
-      
-        <div class="jumbotron" style="background-color: #f2f2f2;">
-            <div class="row"id="home">
-                <div class="col-md-5">
-                  <h1 class="text-center">I'AM <br> 
-                  <div class="gradient">
-                    MOHAN KRISHNA
-                  </div> <p>web developer</p>
-                  </h1>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+          <img src="images/profile_pic.jpg" alt="" class="profile-pic">
+            <h1>Mohan Krishna</h1>
+            <p class="subtitle">Full Stack Developer | Web Apps Enthusiast</p>
+            <p>MCA Graduate passionate about crafting innovative, scalable web solutions. Founder of NEXORA, specializing in turning ideas into impactful digital experiences.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.8;">
+            <p>I'm a passionate Full Stack Developer with a strong academic background in Computer Applications (BCA & MCA) and real-world experience through freelancing and internships. I thrive at the intersection of code, creativity, and client satisfaction.</p>
+            <p style="margin-top: 1.5rem;">I founded <strong>NEXORA</strong>, an IT services startup providing web design, website maintenance, and end-to-end development services. As a self-motivated professional, I'm always eager to learn, adapt, and take on new challenges in the evolving tech landscape.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Bootstrap 5</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+                <ul>
+                    <li>Node.js & Express.js</li>
+                    <li>Java</li>
+                    <li>MySQL & Oracle SQL</li>
+                    <li>MongoDB</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>REST API Development</li>
+                    <li>Netlify & Render</li>
+                    <li>Responsive Web Design</li>
+                    <li>Agile Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>ProCareerLab</h3>
+                    <p>Career Preparation Platform</p>
                 </div>
-                <div class="col-md-7">
-                    <div class="text-center">
-                        <img src="images/profile_pic.jpg" alt="" class="img-circle" style=" height: 300px;">
+                <div class="project-body">
+                    <p>Comprehensive career prep platform featuring resume-building tools, tutorials, and payment integration with Razorpay for premium features.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Razorpay</span>
+                    </div>
+                    <a href="https://procareerlab.in" target="_blank" class="project-link">Visit Site →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Health Care Portal</h3>
+                    <p>Medical Management System</p>
+                </div>
+                <div class="project-body">
+                    <p>Java-based web application for managing patient data, token generation, and appointment scheduling with secure database integration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JSP</span>
+                        <span class="tech-tag">JDBC</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-              <a href="mohan.pdf" download="Mohan_Krishna.pdf" target="_blank">
-                  <button class="button"> DOWNLOAD CV</button>
-                </a>
-               
-            </div>
-        </div>
-    <br>
-    <br><br>
 
-        <div class="container py-lg-6">
-          <h1 class="text-center" id="about">
-            ABOUT ME
-          </h1>
-          <p class="info">Hello, I am Mohan Krishna, a passionate web developer with extensive experience in creating dynamic and responsive websites using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL. I have successfully developed numerous websites and am always eager to learn and adapt to new technologies.
-          I am a dedicated and hardworking individual who strives to achieve my goals through perseverance and continuous learning. As a team player, I excel in collaborative environments and am an effective communicator, ensuring smooth interactions with my team members. My problem-solving skills enable me to tackle challenges efficiently, and I am confident in making sound decisions. I am also a good listener, motivator, planner, and organizer, always ready to support and inspire my team to achieve our collective objectives.
-        </p>
-        </div>
-
-      <div class="container py-lg-9">
-        <h1 class="text-center" id="project">
-          MY PROJECTS
-        </h1>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-md-6" >
-            <div class="thumbnail text-center">
-              <a href="https://www.civicpulse.in/" target="_blank" style="text-decoration: none;">
-                <img src="images/civic.png" alt="civic pulse" style="width:80%;height: 300px; margin: 40px;" class="img-circle">
-                <div class="caption">
-                    <p>This was my first project, Civic Pulse. This website is about election polling for promoting election parties and highlights the power of human voting. It provides a platform for users to participate in polls, view election results, and stay informed about various political parties and their agendas. The goal of Civic Pulse is to encourage voter engagement and ensure that every vote counts in shaping the future of our society.</p>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Kasi Organics</h3>
+                    <p>Business Website</p>
                 </div>
-                <a href="https://www.civicpulse.in/" target="_blank" style="text-decoration: none;">
-                  <button class="web"> click here</button>
-              </a>
+                <div class="project-body">
+                    <p>Clean, responsive business website designed for user engagement and mobile-friendly performance with modern UI/UX principles.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://kasiorganics.com" target="_blank" class="project-link">Visit Site →</a>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail text-center">              
-                <img src="images/triunal_logo.jpg" alt="trinual" style="width:80%;height: 300px; margin: 40px;" class="img-circle">                
-                <div class="caption">
-                    <p>TRIUNAL is my second project, currently under development and expected to be completed within 2 months. This website aims to provide comprehensive solutions for manpower, vendor connections, volunteer networks, and venue coordination. TRIUNAL will serve as a platform to connect event companies, organizers, and venues, facilitating seamless collaboration and efficient event management.</p>
-                  </div>
-                  <a href="https://trinualdemo.netlify.app/" target="_blank" style="text-decoration: none;">
-                  <button class="web">click here</button>
-              </a>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Civic Pulse</h3>
+                    <p>Citizen Engagement Platform</p>
+                </div>
+                <div class="project-body">
+                    <p>Platform enabling users to report and track local civic issues with responsive design and intuitive navigation for improved public participation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <a href="https://civicpulse.in" target="_blank" class="project-link">Visit Site →</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <br>
-      <br><br>
-      <div class="container">
-        <h1 class="text-center" id="contact">
-          CONTACT ME
-        </h1>
-        <p class="text-center" style="font-size: 20px;">with links</p>
-        <div class="text-center" style="padding: 25px;">
-        <a href="mailto:mohancodemaster@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-        <a href="tel:+919392297359"  target="_blank"><i class="fa-solid fa-phone fa-2xl"></i></a>
-        <a href="http://www.linkedin.com/in/mohancodemaster" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-        <a href="https://github.com/MohanCodeMaster" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href="https://www.instagram.com/mac_m_o_h_a_n/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="https://wa.me/+919392297359" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-      </div>
-      </div>
-      <br>
-      <br>
-      <footer class="text-center">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>About This Site</h2>
-            <p>This portfolio website showcases my skills, projects, and experience as a web developer. It highlights my journey, the technologies I specialize in, and the projects I have worked on. Feel free to explore and connect with me through the provided contact links.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Quick Links</h2>
-            <ul class="links">
-              <a href="mailto:mohancodemaster@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-              <a href="tel:+919392297359" target="_blank"><i class="fa-solid fa-phone fa-2xl"></i></a>
-              <a href="http://www.linkedin.com/in/mohancodemaster" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-              <a href="https://github.com/MohanCodeMaster" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-              <a href="https://www.instagram.com/mac_m_o_h_a_n/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-              <a href="https://wa.me/+919392297359" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-            </ul>
-          </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <h3>Freelance Full Stack Web Developer</h3>
+                <p class="company">Nexora (Founder)</p>
+                <p class="date">February 2025 - Present | Bangalore, Karnataka</p>
+                <p>Successfully delivered end-to-end websites for small businesses and startups, focusing on responsive design, client needs, and scalable tech solutions. Managed frontend and backend development, client communication, deployment, and domain setup.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Web Developer Intern</h3>
+                <p class="company">Royal Jai IT Solution</p>
+                <p class="date">January 2023 - March 2024 | Nellore, Andhra Pradesh</p>
+                <p>Developed and maintained web applications using .NET, HTML, CSS, JavaScript, and SQL Server. Enhanced practical skills in debugging, backend integration, and responsive design while contributing to real-time client projects.</p>
+            </div>
         </div>
-        <br> <br>
-            <p>&copy; 2025 Mohan Krishna. All Rights Reserved.</p>
-        </footer> 
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:mohankrishna217872@gmail.com">mohankrishna217872@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <a href="tel:+919392297359">+91 9392297359</a>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/mohancodemaster" target="_blank">mohancodemaster</a>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <a href="https://github.com/MohanCodeMaster" target="_blank">MohanCodeMaster</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mohancodemaster" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MohanCodeMaster" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:mohankrishna217872@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 Mohan Krishna. All rights reserved.</p>
+    </footer>
 </body>
 </html>
