@@ -441,3 +441,11 @@
          flex-direction: column;
      }
  }
+    .profile-pic {
+        width: 184px;
+        height: 187px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border: 4px solid white;
+    }
